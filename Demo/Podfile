@@ -6,47 +6,67 @@
 #加快编译速度
 deployment_target = '9.0'
 platform :ios, deployment_target
-inhibit_all_warnings!
-install! 'cocoapods',
+inhibit_all_warnings!#忽略所有警告⚠️
+install! 'cocoapods',#这个命令是cocoapods声明的一个安装命令，用于安装引入Podfile里面的依赖库
   :disable_input_output_paths => true,
-  :generate_multiple_pod_projects => true,# CocoaPods 1.7 新特性 提高编译速度，使用多个.xcodeproj
-  :warn_for_unused_master_specs_repo => false
-
-
+  :generate_multiple_pod_projects => true,# CocoaPods 1.7 新特性 提高编译速度，使用多个.xcodeproj  Pods文件夹下的xcodeproj
+  :warn_for_unused_master_specs_repo => false,
+  :integrate_targets => false #是否将安装的pods集成到用户项目中 默认为true
 
 #workspace 'Demo.xcworkspace'
 #project   'Demo.xcodeproj'
 
+
+def network_pod
+  pod 'SDWebImage'
+end
+
+def common_pods
+  network_pod
+end
+
+workspace 'Demo.xcworkspace' #指定一个xcworkspace
+project   'Demo.xcodeproj' #指定一个xcodeproj
+
 target 'Demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   #use_frameworks!
-#  project   'Demo.xcodeproj'
+  project   'Demo.xcodeproj' #可以不写 默认有 上方指定project
   
   pod 'FMDB', '>= 2.7.5'
-  pod 'SVProgressHUD', '>= 2.2.5'
+  pod 'SVProgressHUD', '>= 2.2.5', :inhibit_warnings => true
+  
+  #依赖项只能在给定的build configuration中被启用
+#  pod 'LPHPublicLibs', :configurations => ['Debug', 'Release']
+#  pod 'LPHPublicLibs', :configuration => 'Debug'
+  
+  # 仅安装AFNetworking下的Serialization和Reachability模块
+#  pod 'AFNetworking', :subspecs => ['Serialization', 'Reachability']
+  # 仅安装AFNetworking库下的Reachability模块
+#  pod 'AFNetworking/Reachability'
 
 end
 
+target 'TwoLin' do
+  project '../TwoLin/TwoLin.xcodeproj' #重新指定project
+  # TwoLin.a 依赖库
+  common_pods
+end
 
-#TwoLin_xcodeproj = '../TwoLin/TwoLin.xcodeproj'
-#if TwoLin_xcodeproj then
-#  target 'TwoLin' do
-#    project TwoLin_xcodeproj
-#    
-#    # libWChatUIKit.a 依赖库
-#    #ui_common_pods
-#    
-#  end
-#end
-#
-#
-#OneLib_xcodeproj = '../OneLib/OneLib.xcodeproj'
-#if OneLib_xcodeproj then
-#  target 'OneLib' do
-#    project OneLib_xcodeproj
-#    
-#    # libWChatUIKit.a 依赖库
-#    #ui_common_pods
-#    
-#  end
-#end
+
+target 'OneLib' do
+  project '../OneLib/OneLib.xcodeproj' #重新指定project
+  # OneLib.a 依赖库
+  common_pods
+end
+
+
+
+# 这个是cocoapods的一些配置,官网并没有太详细的说明,一般采取默认就好了,也就是不写.
+post_install do |installer|
+   installer.pods_project.targets.each do |target|
+     puts target.name
+   end
+end
+
+

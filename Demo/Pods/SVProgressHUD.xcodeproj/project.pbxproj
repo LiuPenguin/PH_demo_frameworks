@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,27 +12,27 @@
 		37BA8A6DB020C07214853998A57438EC /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 232E0E9C577224BC4067C33783650158 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		481788A61468C9D2EAAC9ABAABC772BA /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F90B33BC5B11599440F6F579B1999DED /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4EA68E1E71AF19336CC32475B44B100F /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B842E9E9A34F4E7D133FB71C79C21F8 /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4F09ADBC2DC651FE0B1FF7B8DA072D53 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3278507A303F366F34B6AB310A382B /* SVProgressHUD-dummy.m */; };
+		4F09ADBC2DC651FE0B1FF7B8DA072D53 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36866FD3719BBB63270DC116ED5E91FE /* SVProgressHUD-dummy.m */; };
 		D1BA50B5DA9217B866A5D23755389DE1 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98358F54F948EB68A4C2AD993DF8646B /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D490945469C474A7A5E38E9CE15005BD /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7925F1B7D9DC3BD29500E305B22638F6 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F0CB0C0AC735436C6AD49C278EA55666 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 405AEEDC23E589ACECB5E6A9B175B741 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E558029232A3D4B58FBF29B3D4976DF /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		232E0E9C577224BC4067C33783650158 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		36866FD3719BBB63270DC116ED5E91FE /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		3B842E9E9A34F4E7D133FB71C79C21F8 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		405AEEDC23E589ACECB5E6A9B175B741 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		4CE17E9AAEE5C88007208B5079E81F8E /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		4D76D8F5565E1880687BD2B43C52C6D1 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		7538137B5071DCE3BEA5499858AF4281 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		7925F1B7D9DC3BD29500E305B22638F6 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		8102A4C7DDC3325675BA246AC6907779 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		921EE7C0230C2411295881961E9DC08A /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		98358F54F948EB68A4C2AD993DF8646B /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		A09F0C02BA4BF082C248BB3A91121267 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		C310BC2D81249F267C7F6AB999624074 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C2C9E458AA596AEE79DD1323CAD4BD /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		D649A566739E834029449D7355BDBAAE /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		F90B33BC5B11599440F6F579B1999DED /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		FF3278507A303F366F34B6AB310A382B /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				7925F1B7D9DC3BD29500E305B22638F6 /* SVRadialGradientLayer.h */,
 				F90B33BC5B11599440F6F579B1999DED /* SVRadialGradientLayer.m */,
 				7234A7DDF4979B164955474C5BE35937 /* Resources */,
-				EEADB8E1F0CD2B70362FE9FBB63BDAF3 /* Support Files */,
+				A04107B6A13D8D513E317190F8AA0690 /* Support Files */,
 			);
 			name = SVProgressHUD;
 			path = SVProgressHUD;
@@ -79,6 +79,18 @@
 				8102A4C7DDC3325675BA246AC6907779 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A04107B6A13D8D513E317190F8AA0690 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36866FD3719BBB63270DC116ED5E91FE /* SVProgressHUD-dummy.m */,
+				A09F0C02BA4BF082C248BB3A91121267 /* SVProgressHUD-prefix.pch */,
+				D649A566739E834029449D7355BDBAAE /* SVProgressHUD.debug.xcconfig */,
+				0E558029232A3D4B58FBF29B3D4976DF /* SVProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
 		BD993AC793A306A9B8312D6E94E1F8F6 /* Frameworks */ = {
@@ -94,18 +106,6 @@
 				C310BC2D81249F267C7F6AB999624074 /* libSVProgressHUD.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EEADB8E1F0CD2B70362FE9FBB63BDAF3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF3278507A303F366F34B6AB310A382B /* SVProgressHUD-dummy.m */,
-				4CE17E9AAEE5C88007208B5079E81F8E /* SVProgressHUD-prefix.pch */,
-				921EE7C0230C2411295881961E9DC08A /* SVProgressHUD.debug.xcconfig */,
-				D4C2C9E458AA596AEE79DD1323CAD4BD /* SVProgressHUD.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +152,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = BC64F8932DA82FE8433662E9A6AEA0B1 /* Build configuration list for PBXProject "SVProgressHUD" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -185,53 +185,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		54559326BAFF1EA27CD136259307FE21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 921EE7C0230C2411295881961E9DC08A /* SVProgressHUD.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6F58D2C643BE3EC0752E487ECAF0F506 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4C2C9E458AA596AEE79DD1323CAD4BD /* SVProgressHUD.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		8208355D9EBA52DE535EFB796B5E713A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -293,6 +246,51 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		A28DB9867715149D75F25BC7B20D5E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E558029232A3D4B58FBF29B3D4976DF /* SVProgressHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBD9CB6F91DC708F4AEA5F7EF0169E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D649A566739E834029449D7355BDBAAE /* SVProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		FEA1F82610C7C01C9589630701B05576 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -366,8 +364,8 @@
 		AB3AFB0617AE137A70949F36557BB73A /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54559326BAFF1EA27CD136259307FE21 /* Debug */,
-				6F58D2C643BE3EC0752E487ECAF0F506 /* Release */,
+				DBD9CB6F91DC708F4AEA5F7EF0169E6B /* Debug */,
+				A28DB9867715149D75F25BC7B20D5E70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

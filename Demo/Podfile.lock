@@ -2,21 +2,27 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - FMDB (>= 2.7.5)
+  - SDWebImage
   - SVProgressHUD (>= 2.2.5)
 
 SPEC REPOS:
   trunk:
     - FMDB
+    - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: f0a35ea206de5099402ed33f77a58e2374d041e1
+PODFILE CHECKSUM: d7bb3d89cf07d475f7f3ad63d19e3e39f239eb42
 
 COCOAPODS: 1.10.1
