@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3771064C25DFBC4D00668223 /* OneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7D25DF596900E52897 /* OneLib.framework */; };
+		3771064D25DFBC4D00668223 /* OneLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7D25DF596900E52897 /* OneLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3771064E25DFBC4D00668223 /* TwoLin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; };
+		3771064F25DFBC4D00668223 /* TwoLin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37AFFADA25DE5E4100E52897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAD925DE5E4100E52897 /* AppDelegate.m */; };
 		37AFFADD25DE5E4100E52897 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFADC25DE5E4100E52897 /* SceneDelegate.m */; };
 		37AFFAE025DE5E4100E52897 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFADF25DE5E4100E52897 /* ViewController.m */; };
@@ -17,11 +21,7 @@
 		37AFFAF525DE5E4400E52897 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAF425DE5E4400E52897 /* DemoTests.m */; };
 		37AFFB0025DE5E4400E52897 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAFF25DE5E4400E52897 /* DemoUITests.m */; };
 		37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC1725DE793800E52897 /* libc++.tbd */; };
-		37AFFCB425DF5E9B00E52897 /* OneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7D25DF596900E52897 /* OneLib.framework */; };
-		37AFFCB525DF5E9B00E52897 /* OneLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7D25DF596900E52897 /* OneLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		37AFFCB725DF5E9C00E52897 /* TwoLin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; };
-		37AFFCB825DF5E9C00E52897 /* TwoLin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		523C57BA95A9A149C1E54456 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F448BF8F2C172EA260828B97 /* libPods-Demo.a */; };
+		C6F9825271EEB4F356A7FE09 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F448BF8F2C172EA260828B97 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37AFFCB625DF5E9B00E52897 /* Embed Frameworks */ = {
+		3771065025DFBC4D00668223 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37AFFCB525DF5E9B00E52897 /* OneLib.framework in Embed Frameworks */,
-				37AFFCB825DF5E9C00E52897 /* TwoLin.framework in Embed Frameworks */,
+				3771064D25DFBC4D00668223 /* OneLib.framework in Embed Frameworks */,
+				3771064F25DFBC4D00668223 /* TwoLin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,10 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37AFFCB425DF5E9B00E52897 /* OneLib.framework in Frameworks */,
-				37AFFCB725DF5E9C00E52897 /* TwoLin.framework in Frameworks */,
 				37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */,
-				523C57BA95A9A149C1E54456 /* libPods-Demo.a in Frameworks */,
+				3771064E25DFBC4D00668223 /* TwoLin.framework in Frameworks */,
+				3771064C25DFBC4D00668223 /* OneLib.framework in Frameworks */,
+				C6F9825271EEB4F356A7FE09 /* libPods-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +202,8 @@
 				37AFFAD225DE5E4100E52897 /* Frameworks */,
 				37AFFAD325DE5E4100E52897 /* Resources */,
 				1DC04362A6C779FD10BD7CD9 /* [CP] Copy Pods Resources */,
-				37AFFCB625DF5E9B00E52897 /* Embed Frameworks */,
+				3771065025DFBC4D00668223 /* Embed Frameworks */,
+				321627343DBA80B260728107 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,6 +332,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		321627343DBA80B260728107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD84567E4BA50DEA1E561060 /* [CP] Check Pods Manifest.lock */ = {

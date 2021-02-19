@@ -1,4 +1,9 @@
 PODS:
+  - A0PreMainTime (0.2.4):
+    - A0PreMainTime/PreMainTime (= 0.2.4)
+    - A0PreMainTime/TimeMonitor (= 0.2.4)
+  - A0PreMainTime/PreMainTime (0.2.4)
+  - A0PreMainTime/TimeMonitor (0.2.4)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -8,21 +13,24 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - A0PreMainTime
   - FMDB (>= 2.7.5)
   - SDWebImage
   - SVProgressHUD (>= 2.2.5)
 
 SPEC REPOS:
   trunk:
+    - A0PreMainTime
     - FMDB
     - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  A0PreMainTime: fbe4be1be6b66bd99f6daa16239425aef30d54c8
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: e95a2b5c64b5731dcca48f503739100fec093850
+PODFILE CHECKSUM: 86d291f4be3fb6a1956746c8cda0ffe5f19ee1f0
 
 COCOAPODS: 1.10.1

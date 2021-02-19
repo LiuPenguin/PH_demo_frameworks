@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C5F59622E7A2F6B1B487F27AC023D8A /* ZBTimeMonitorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF259B25E4A9F33546E5DA0F822550C /* ZBTimeMonitorModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D3222E3D9DE6FA23B72753EA0C21BC7 /* ZBTimeMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F95B7F3AEE3CB5038B7FCF9B9505AE09 /* ZBTimeMonitorManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7EDC62F25C31C6213DF11BB18C72C58C /* A0PreMainTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC1A4543C92591002A87A3EBA1E0B4A /* A0PreMainTime-dummy.m */; };
+		8973B8A1E2F7F601417CA20323BD1B16 /* ZBTimeMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C2980F9DE85D1E7BE2E60B5EB39A5C /* ZBTimeMonitorManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C846D2C8D1E9BC742FE9E3958D2FE300 /* ZBTimeMonitorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83963CEB56E5D375FA3BB44A8C9DE797 /* ZBTimeMonitorModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04B8FB2736CE3EFD49233A6CBAE60ECB /* A0PreMainTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = A0PreMainTime.debug.xcconfig; sourceTree = "<group>"; };
+		1D33AEAC6013032F09FC97055BA2009C /* libA0PreMainTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libA0PreMainTime.a; path = libA0PreMainTime.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4705FF88507C4DC67616E373F47203B4 /* A0PreMainTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = A0PreMainTime.release.xcconfig; sourceTree = "<group>"; };
+		56C2980F9DE85D1E7BE2E60B5EB39A5C /* ZBTimeMonitorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZBTimeMonitorManager.h; path = A0PreMainTime/TimeMonitor/ZBTimeMonitorManager.h; sourceTree = "<group>"; };
+		5B1CEC813DE59C5CAD26820685498C7A /* A0PreMainTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = A0PreMainTime.framework; path = A0PreMainTime/Framework/A0PreMainTime.framework; sourceTree = "<group>"; };
+		5EF259B25E4A9F33546E5DA0F822550C /* ZBTimeMonitorModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZBTimeMonitorModel.m; path = A0PreMainTime/TimeMonitor/ZBTimeMonitorModel.m; sourceTree = "<group>"; };
+		83963CEB56E5D375FA3BB44A8C9DE797 /* ZBTimeMonitorModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZBTimeMonitorModel.h; path = A0PreMainTime/TimeMonitor/ZBTimeMonitorModel.h; sourceTree = "<group>"; };
+		CFC1A4543C92591002A87A3EBA1E0B4A /* A0PreMainTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "A0PreMainTime-dummy.m"; sourceTree = "<group>"; };
+		F95B7F3AEE3CB5038B7FCF9B9505AE09 /* ZBTimeMonitorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZBTimeMonitorManager.m; path = A0PreMainTime/TimeMonitor/ZBTimeMonitorManager.m; sourceTree = "<group>"; };
+		FF2D460800E187B8DB6EB962DF3A05A9 /* A0PreMainTime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "A0PreMainTime-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEF454AEC7FE08D5ECEAA0BE0A977666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C8778B439530430B0A402AA2ECBF5DB = {
+			isa = PBXGroup;
+			children = (
+				A411F3DA7F8F2E2D7B1CBD5773E445D2 /* A0PreMainTime */,
+				E7E6DF5D583CA3D36DC0388FE604658D /* Frameworks */,
+				E79824661E17B66912519332C5C89650 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A411F3DA7F8F2E2D7B1CBD5773E445D2 /* A0PreMainTime */ = {
+			isa = PBXGroup;
+			children = (
+				D14631B97EB752A6A43A2D44F4EA511B /* PreMainTime */,
+				F78B65B91250F4137B49306106632341 /* Support Files */,
+				C3AD3143AD949ED767DB38A1B91088D6 /* TimeMonitor */,
+			);
+			name = A0PreMainTime;
+			path = A0PreMainTime;
+			sourceTree = "<group>";
+		};
+		C38D521D6DAC0E2A63582DF27E5A2F79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1CEC813DE59C5CAD26820685498C7A /* A0PreMainTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3AD3143AD949ED767DB38A1B91088D6 /* TimeMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				56C2980F9DE85D1E7BE2E60B5EB39A5C /* ZBTimeMonitorManager.h */,
+				F95B7F3AEE3CB5038B7FCF9B9505AE09 /* ZBTimeMonitorManager.m */,
+				83963CEB56E5D375FA3BB44A8C9DE797 /* ZBTimeMonitorModel.h */,
+				5EF259B25E4A9F33546E5DA0F822550C /* ZBTimeMonitorModel.m */,
+			);
+			name = TimeMonitor;
+			sourceTree = "<group>";
+		};
+		D14631B97EB752A6A43A2D44F4EA511B /* PreMainTime */ = {
+			isa = PBXGroup;
+			children = (
+				C38D521D6DAC0E2A63582DF27E5A2F79 /* Frameworks */,
+			);
+			name = PreMainTime;
+			sourceTree = "<group>";
+		};
+		E79824661E17B66912519332C5C89650 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D33AEAC6013032F09FC97055BA2009C /* libA0PreMainTime.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7E6DF5D583CA3D36DC0388FE604658D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F78B65B91250F4137B49306106632341 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFC1A4543C92591002A87A3EBA1E0B4A /* A0PreMainTime-dummy.m */,
+				FF2D460800E187B8DB6EB962DF3A05A9 /* A0PreMainTime-prefix.pch */,
+				04B8FB2736CE3EFD49233A6CBAE60ECB /* A0PreMainTime.debug.xcconfig */,
+				4705FF88507C4DC67616E373F47203B4 /* A0PreMainTime.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/A0PreMainTime";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0553795BF223FD9FF4D2B4DC272EE371 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8973B8A1E2F7F601417CA20323BD1B16 /* ZBTimeMonitorManager.h in Headers */,
+				C846D2C8D1E9BC742FE9E3958D2FE300 /* ZBTimeMonitorModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83199763D12F7F2D9E863F2A8DD1B3C7 /* A0PreMainTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D1ACB9BBA7FCF1E29FAE02FD686CA42 /* Build configuration list for PBXNativeTarget "A0PreMainTime" */;
+			buildPhases = (
+				0553795BF223FD9FF4D2B4DC272EE371 /* Headers */,
+				4E8E970805EFBC9199906C91CAECCC8B /* Sources */,
+				EEF454AEC7FE08D5ECEAA0BE0A977666 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = A0PreMainTime;
+			productName = A0PreMainTime;
+			productReference = 1D33AEAC6013032F09FC97055BA2009C /* libA0PreMainTime.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D09AEF54F1E6AF0F8A17EAB5A0F5254 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 3345AD7EE55722EFA1BD67FB95151689 /* Build configuration list for PBXProject "A0PreMainTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C8778B439530430B0A402AA2ECBF5DB;
+			productRefGroup = E79824661E17B66912519332C5C89650 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83199763D12F7F2D9E863F2A8DD1B3C7 /* A0PreMainTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E8E970805EFBC9199906C91CAECCC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDC62F25C31C6213DF11BB18C72C58C /* A0PreMainTime-dummy.m in Sources */,
+				7D3222E3D9DE6FA23B72753EA0C21BC7 /* ZBTimeMonitorManager.m in Sources */,
+				1C5F59622E7A2F6B1B487F27AC023D8A /* ZBTimeMonitorModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C7FF6AC8442E8AE3810135A84CAB81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1E930D7D11C0973018C67045269254D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6F8909F558D0D3AA5712BEA93E19D8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4705FF88507C4DC67616E373F47203B4 /* A0PreMainTime.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/A0PreMainTime/A0PreMainTime-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = A0PreMainTime;
+				PRODUCT_NAME = A0PreMainTime;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46A6581D151458F2B083441775952F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B8FB2736CE3EFD49233A6CBAE60ECB /* A0PreMainTime.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/A0PreMainTime/A0PreMainTime-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = A0PreMainTime;
+				PRODUCT_NAME = A0PreMainTime;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3345AD7EE55722EFA1BD67FB95151689 /* Build configuration list for PBXProject "A0PreMainTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C7FF6AC8442E8AE3810135A84CAB81B /* Debug */,
+				1E930D7D11C0973018C67045269254D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1ACB9BBA7FCF1E29FAE02FD686CA42 /* Build configuration list for PBXNativeTarget "A0PreMainTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46A6581D151458F2B083441775952F9 /* Debug */,
+				6F8909F558D0D3AA5712BEA93E19D8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D09AEF54F1E6AF0F8A17EAB5A0F5254 /* Project object */;
+}

@@ -31,6 +31,7 @@ target 'Demo' do
   
   pod 'FMDB', '>= 2.7.5'
   pod 'SVProgressHUD', '>= 2.2.5', :inhibit_warnings => true
+  pod 'A0PreMainTime'
   
   #依赖项只能在给定的build configuration中被启用
 #  pod 'LPHPublicLibs', :configurations => ['Debug', 'Release']
@@ -60,10 +61,30 @@ end
 
 
 # 这个是cocoapods的一些配置,官网并没有太详细的说明,一般采取默认就好了,也就是不写.
+#post_install do |installer|
+#   installer.pods_project.targets.each do |target|
+#     puts target.name
+#   end
+#end
+
+
+
 post_install do |installer|
-   installer.pods_project.targets.each do |target|
-     puts target.name
-   end
+  installer.generated_projects.each do |project|
+    project.build_configurations.each do |config|
+        if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 9.0
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = deployment_target
+        end
+    end
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 9.0
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = deployment_target
+        end
+      end
+    end
+  end
+  
+  # exec './sdkScript/pods_reference.rb'
+  
 end
-
-
