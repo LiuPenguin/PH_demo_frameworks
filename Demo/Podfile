@@ -1,0 +1,52 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+
+
+#加快编译速度
+deployment_target = '9.0'
+platform :ios, deployment_target
+inhibit_all_warnings!
+install! 'cocoapods',
+  :disable_input_output_paths => true,
+  :generate_multiple_pod_projects => true,# CocoaPods 1.7 新特性 提高编译速度，使用多个.xcodeproj
+  :warn_for_unused_master_specs_repo => false
+
+
+
+#workspace 'Demo.xcworkspace'
+#project   'Demo.xcodeproj'
+
+target 'Demo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #use_frameworks!
+#  project   'Demo.xcodeproj'
+  
+  pod 'FMDB', '>= 2.7.5'
+  pod 'SVProgressHUD', '>= 2.2.5'
+
+end
+
+
+#TwoLin_xcodeproj = '../TwoLin/TwoLin.xcodeproj'
+#if TwoLin_xcodeproj then
+#  target 'TwoLin' do
+#    project TwoLin_xcodeproj
+#    
+#    # libWChatUIKit.a 依赖库
+#    #ui_common_pods
+#    
+#  end
+#end
+#
+#
+#OneLib_xcodeproj = '../OneLib/OneLib.xcodeproj'
+#if OneLib_xcodeproj then
+#  target 'OneLib' do
+#    project OneLib_xcodeproj
+#    
+#    # libWChatUIKit.a 依赖库
+#    #ui_common_pods
+#    
+#  end
+#end
