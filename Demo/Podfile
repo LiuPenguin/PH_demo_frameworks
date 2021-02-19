@@ -11,11 +11,7 @@ install! 'cocoapods',#这个命令是cocoapods声明的一个安装命令，用�
   :disable_input_output_paths => true,
   :generate_multiple_pod_projects => true,# CocoaPods 1.7 新特性 提高编译速度，使用多个.xcodeproj  Pods文件夹下的xcodeproj
   :warn_for_unused_master_specs_repo => false,
-  :integrate_targets => false #是否将安装的pods集成到用户项目中 默认为true
-
-#workspace 'Demo.xcworkspace'
-#project   'Demo.xcodeproj'
-
+  :integrate_targets => true #是否将安装的pods集成到用户项目中 默认为true 改为false报错呀
 
 def network_pod
   pod 'SDWebImage'
@@ -31,7 +27,7 @@ project   'Demo.xcodeproj' #指定一个xcodeproj
 target 'Demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   #use_frameworks!
-  project   'Demo.xcodeproj' #可以不写 默认有 上方指定project
+#  project   'Demo.xcodeproj' #可以不写 默认有 上方指定project
   
   pod 'FMDB', '>= 2.7.5'
   pod 'SVProgressHUD', '>= 2.2.5', :inhibit_warnings => true
@@ -46,6 +42,7 @@ target 'Demo' do
 #  pod 'AFNetworking/Reachability'
 
 end
+
 
 target 'TwoLin' do
   project '../TwoLin/TwoLin.xcodeproj' #重新指定project

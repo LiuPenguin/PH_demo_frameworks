@@ -12,6 +12,7 @@
 		37AFFB5125DE5EA600E52897 /* TwoLin.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFB4325DE5EA600E52897 /* TwoLin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFBFD25DE6E0A00E52897 /* twoTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFBFB25DE6E0A00E52897 /* twoTestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFBFE25DE6E0A00E52897 /* twoTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFBFC25DE6E0A00E52897 /* twoTestClass.m */; };
+		39EFBF890DA320F8FAD2F58D /* libPods-TwoLin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 843F284044CF686BFA2754C2 /* libPods-TwoLin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 		37AFFBFB25DE6E0A00E52897 /* twoTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twoTestClass.h; sourceTree = "<group>"; };
 		37AFFBFC25DE6E0A00E52897 /* twoTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twoTestClass.m; sourceTree = "<group>"; };
 		37AFFC3925DE7BB300E52897 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		3B5CC7733DCFCDDA11415350 /* Pods-TwoLin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLin.release.xcconfig"; path = "Target Support Files/Pods-TwoLin/Pods-TwoLin.release.xcconfig"; sourceTree = "<group>"; };
+		716968DDE43AE18A91740EC5 /* Pods-TwoLin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLin.debug.xcconfig"; path = "Target Support Files/Pods-TwoLin/Pods-TwoLin.debug.xcconfig"; sourceTree = "<group>"; };
+		843F284044CF686BFA2754C2 /* libPods-TwoLin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwoLin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EFBF890DA320F8FAD2F58D /* libPods-TwoLin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 				37AFFB4D25DE5EA600E52897 /* TwoLinTests */,
 				37AFFB4125DE5EA600E52897 /* Products */,
 				37AFFC3825DE7BB300E52897 /* Frameworks */,
+				FAD77F1AA943803A34FA2021 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +104,19 @@
 			isa = PBXGroup;
 			children = (
 				37AFFC3925DE7BB300E52897 /* libc++.tbd */,
+				843F284044CF686BFA2754C2 /* libPods-TwoLin.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD77F1AA943803A34FA2021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				716968DDE43AE18A91740EC5 /* Pods-TwoLin.debug.xcconfig */,
+				3B5CC7733DCFCDDA11415350 /* Pods-TwoLin.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Demo/Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37AFFB5425DE5EA600E52897 /* Build configuration list for PBXNativeTarget "TwoLin" */;
 			buildPhases = (
+				9FE6A5181969EF65F0A725F8 /* [CP] Check Pods Manifest.lock */,
 				37AFFB3B25DE5EA600E52897 /* Headers */,
 				37AFFB3C25DE5EA600E52897 /* Sources */,
 				37AFFB3D25DE5EA600E52897 /* Frameworks */,
@@ -204,6 +222,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FE6A5181969EF65F0A725F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwoLin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37AFFB3C25DE5EA600E52897 /* Sources */ = {
@@ -353,7 +396,9 @@
 		};
 		37AFFB5525DE5EA600E52897 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716968DDE43AE18A91740EC5 /* Pods-TwoLin.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -377,7 +422,9 @@
 		};
 		37AFFB5625DE5EA600E52897 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5CC7733DCFCDDA11415350 /* Pods-TwoLin.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

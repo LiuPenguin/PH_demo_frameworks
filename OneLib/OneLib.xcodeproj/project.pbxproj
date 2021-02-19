@@ -12,6 +12,7 @@
 		37AFFB2B25DE5E8C00E52897 /* OneLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFB1D25DE5E8C00E52897 /* OneLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFC0325DE6E1900E52897 /* oneTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFC0125DE6E1900E52897 /* oneTestClass.h */; };
 		37AFFC0425DE6E1900E52897 /* oneTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFC0225DE6E1900E52897 /* oneTestClass.m */; };
+		D89F55D9627008D7819D9600 /* libPods-OneLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 663078D546956849EDA7250C /* libPods-OneLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,9 @@
 		37AFFB2A25DE5E8C00E52897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37AFFC0125DE6E1900E52897 /* oneTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oneTestClass.h; sourceTree = "<group>"; };
 		37AFFC0225DE6E1900E52897 /* oneTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneTestClass.m; sourceTree = "<group>"; };
+		663078D546956849EDA7250C /* libPods-OneLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A382D093363386634394AA /* Pods-OneLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLib.release.xcconfig"; path = "Target Support Files/Pods-OneLib/Pods-OneLib.release.xcconfig"; sourceTree = "<group>"; };
+		DFA32A5947A3AA295D7DDB47 /* Pods-OneLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLib.debug.xcconfig"; path = "Target Support Files/Pods-OneLib/Pods-OneLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89F55D9627008D7819D9600 /* libPods-OneLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 				37AFFB1C25DE5E8C00E52897 /* OneLib */,
 				37AFFB2725DE5E8C00E52897 /* OneLibTests */,
 				37AFFB1B25DE5E8C00E52897 /* Products */,
+				B1BBB591721E3012B9253D1C /* Pods */,
+				975F66C740C02E62D5923106 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +99,24 @@
 			path = OneLibTests;
 			sourceTree = "<group>";
 		};
+		975F66C740C02E62D5923106 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				663078D546956849EDA7250C /* libPods-OneLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1BBB591721E3012B9253D1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFA32A5947A3AA295D7DDB47 /* Pods-OneLib.debug.xcconfig */,
+				A0A382D093363386634394AA /* Pods-OneLib.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Demo/Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -111,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37AFFB2E25DE5E8C00E52897 /* Build configuration list for PBXNativeTarget "OneLib" */;
 			buildPhases = (
+				0015D30E71AC4CFB25E193B5 /* [CP] Check Pods Manifest.lock */,
 				37AFFB1525DE5E8C00E52897 /* Headers */,
 				37AFFB1625DE5E8C00E52897 /* Sources */,
 				37AFFB1725DE5E8C00E52897 /* Frameworks */,
@@ -194,6 +220,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0015D30E71AC4CFB25E193B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37AFFB1625DE5E8C00E52897 /* Sources */ = {
@@ -343,6 +394,7 @@
 		};
 		37AFFB2F25DE5E8C00E52897 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA32A5947A3AA295D7DDB47 /* Pods-OneLib.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -366,6 +418,7 @@
 		};
 		37AFFB3025DE5E8C00E52897 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A382D093363386634394AA /* Pods-OneLib.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
