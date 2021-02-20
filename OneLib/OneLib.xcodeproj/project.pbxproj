@@ -10,7 +10,7 @@
 		37AFFB2425DE5E8C00E52897 /* OneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFB1A25DE5E8C00E52897 /* OneLib.framework */; };
 		37AFFB2925DE5E8C00E52897 /* OneLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFB2825DE5E8C00E52897 /* OneLibTests.m */; };
 		37AFFB2B25DE5E8C00E52897 /* OneLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFB1D25DE5E8C00E52897 /* OneLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37AFFC0325DE6E1900E52897 /* oneTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFC0125DE6E1900E52897 /* oneTestClass.h */; };
+		37AFFC0325DE6E1900E52897 /* oneTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFC0125DE6E1900E52897 /* oneTestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFC0425DE6E1900E52897 /* oneTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFC0225DE6E1900E52897 /* oneTestClass.m */; };
 		4B9D657D61311F09506C7B59 /* libPods-OneLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11B665690EEE2A729468ECC /* libPods-OneLib.a */; };
 /* End PBXBuildFile section */

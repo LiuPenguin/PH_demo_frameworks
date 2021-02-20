@@ -126,8 +126,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37AFFBFD25DE6E0A00E52897 /* twoTestClass.h in Headers */,
 				37AFFB5125DE5EA600E52897 /* TwoLin.h in Headers */,
+				37AFFBFD25DE6E0A00E52897 /* twoTestClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
