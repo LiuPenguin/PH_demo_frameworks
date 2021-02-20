@@ -21,7 +21,7 @@
 		37AFFAF525DE5E4400E52897 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAF425DE5E4400E52897 /* DemoTests.m */; };
 		37AFFB0025DE5E4400E52897 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAFF25DE5E4400E52897 /* DemoUITests.m */; };
 		37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC1725DE793800E52897 /* libc++.tbd */; };
-		C6F9825271EEB4F356A7FE09 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F448BF8F2C172EA260828B97 /* libPods-Demo.a */; };
+		6F87356591DB41B3CDE20881 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F448BF8F2C172EA260828B97 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +91,7 @@
 				37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */,
 				3771064E25DFBC4D00668223 /* TwoLin.framework in Frameworks */,
 				3771064C25DFBC4D00668223 /* OneLib.framework in Frameworks */,
-				C6F9825271EEB4F356A7FE09 /* libPods-Demo.a in Frameworks */,
+				6F87356591DB41B3CDE20881 /* libPods-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +576,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.penguinliu.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -610,6 +611,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.penguinliu.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

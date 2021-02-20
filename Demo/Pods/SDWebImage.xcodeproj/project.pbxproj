@@ -847,10 +847,11 @@
 			};
 			name = Release;
 		};
-		17A371C0378E51E23D8ABCABC70AA1E0 /* Release */ = {
+		8530115BB0EA647ACF3984507B54DD03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7BADF242DA8595FC66FCE3BF4466D3C /* SDWebImage.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -870,10 +871,11 @@
 			};
 			name = Release;
 		};
-		B6A6B484ADE96C8CBC9DEBF9DB512CCB /* Debug */ = {
+		F6EAD5CF1EA7C9DAD6586AB76EE2E934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD6121275BEB28C6014F134738B57150 /* SDWebImage.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -907,8 +909,8 @@
 		D4B80EE4174DD1C3AB826CA69D474189 /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6A6B484ADE96C8CBC9DEBF9DB512CCB /* Debug */,
-				17A371C0378E51E23D8ABCABC70AA1E0 /* Release */,
+				F6EAD5CF1EA7C9DAD6586AB76EE2E934 /* Debug */,
+				8530115BB0EA647ACF3984507B54DD03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

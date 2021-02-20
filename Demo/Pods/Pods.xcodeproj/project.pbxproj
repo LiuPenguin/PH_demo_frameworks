@@ -375,6 +375,27 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0FFD89F6F19375E2B8DE689118759BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D473C2AE0D182287B3B1E3D109B82D /* Pods-OneLib.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -484,11 +505,33 @@
 			};
 			name = Release;
 		};
-		8423FA307F881EB40A5E095335B2010A /* Release */ = {
+		BC44D2A92AF349C4AC85EDAC64D2A220 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D6B031CCEBDF91592E6E986C0FD8BC3 /* Pods-TwoLin.release.xcconfig */;
+			baseConfigurationReference = 7BF82426E1C9D3082715781569B98C4D /* Pods-TwoLin.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C166FDDFF2300858D9C076B7A5FB1245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968818712C8B0D9EA3F40A68E3065C17 /* Pods-OneLib.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -505,11 +548,12 @@
 			};
 			name = Release;
 		};
-		99763E8878DB771A99A2C6F2B7CF7273 /* Debug */ = {
+		C3FFBEAE2DDAFAEC77EC84109C1A3FFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94D473C2AE0D182287B3B1E3D109B82D /* Pods-OneLib.debug.xcconfig */;
+			baseConfigurationReference = 4D6B031CCEBDF91592E6E986C0FD8BC3 /* Pods-TwoLin.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -522,8 +566,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -587,47 +632,6 @@
 			};
 			name = Release;
 		};
-		DF2B01755FD59D2FF31EA29E4D8F820D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BF82426E1C9D3082715781569B98C4D /* Pods-TwoLin.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E7F23340407452F0AD70E3A82E7624A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 968818712C8B0D9EA3F40A68E3065C17 /* Pods-OneLib.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -652,8 +656,8 @@
 		90DF8BAE6DEE8AB03515B3586968196E /* Build configuration list for PBXNativeTarget "Pods-OneLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99763E8878DB771A99A2C6F2B7CF7273 /* Debug */,
-				E7F23340407452F0AD70E3A82E7624A0 /* Release */,
+				0FFD89F6F19375E2B8DE689118759BAE /* Debug */,
+				C166FDDFF2300858D9C076B7A5FB1245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -661,8 +665,8 @@
 		BE09A0001F3FD92F323833C98077E4ED /* Build configuration list for PBXNativeTarget "Pods-TwoLin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF2B01755FD59D2FF31EA29E4D8F820D /* Debug */,
-				8423FA307F881EB40A5E095335B2010A /* Release */,
+				BC44D2A92AF349C4AC85EDAC64D2A220 /* Debug */,
+				C3FFBEAE2DDAFAEC77EC84109C1A3FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

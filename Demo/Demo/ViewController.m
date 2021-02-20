@@ -26,6 +26,7 @@
     NSLog(@"开始初始化");
     
     [twoTestClass twoTestPrint];
+    [oneTestClass oneTestPrint];
     // Do any additional setup after loading the view.
 }
 
