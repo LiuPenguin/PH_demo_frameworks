@@ -12,7 +12,6 @@
 		37AFFB5125DE5EA600E52897 /* TwoLin.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFB4325DE5EA600E52897 /* TwoLin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFBFD25DE6E0A00E52897 /* twoTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFBFB25DE6E0A00E52897 /* twoTestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFBFE25DE6E0A00E52897 /* twoTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFBFC25DE6E0A00E52897 /* twoTestClass.m */; };
-		B6E1926C80A0C08DEB9F9C68 /* libPods-TwoLin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BD88C96E470ECE096499E9 /* libPods-TwoLin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 		37AFFC3925DE7BB300E52897 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		3B5CC7733DCFCDDA11415350 /* Pods-TwoLin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLin.release.xcconfig"; path = "Target Support Files/Pods-TwoLin/Pods-TwoLin.release.xcconfig"; sourceTree = "<group>"; };
 		716968DDE43AE18A91740EC5 /* Pods-TwoLin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLin.debug.xcconfig"; path = "Target Support Files/Pods-TwoLin/Pods-TwoLin.debug.xcconfig"; sourceTree = "<group>"; };
-		A2BD88C96E470ECE096499E9 /* libPods-TwoLin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwoLin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E1926C80A0C08DEB9F9C68 /* libPods-TwoLin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				37AFFC3925DE7BB300E52897 /* libc++.tbd */,
-				A2BD88C96E470ECE096499E9 /* libPods-TwoLin.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -1,6 +1,0 @@
-framework module TwoLin {
-  umbrella header "TwoLin.h"
-
-  export *
-  module * { export * }
-}

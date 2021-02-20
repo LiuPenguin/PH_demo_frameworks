@@ -1,14 +1,5 @@
 #!/bin/sh
 
-#  bulid-imlib.sh
-#  WChatIMLib
-#
-#  Created by huipeng on 2020/09/03.
-#  Copyright © 2020 WChat. All rights reserved.
-
-
-# eg 终端进入此工程目录 运行 sh -x autobuild.sh -bRelease -vx.x.x.xx
-
 configuration="Release"
 DEV_FLAG=""
 VER_FLAG=""
@@ -26,22 +17,29 @@ VER_FLAG=$PPARAM
 fi
 done
 
-if [ ${DEV_FLAG} == "Debug" ]
+if [[ ${DEV_FLAG} == "debug" ]] || [[ ${DEV_FLAG} == "Debug" ]]
 then
 configuration="Debug"
 else
 configuration="Release"
 fi
 
-rm -rf bin/*
-rm -rf build/*
 
 PROJECT_WORKSPACE="../Demo/Demo.xcworkspace"
-PROJECT_NAME="OneLib.xcodeproj"
 PROJECT_SCHEME="OneLib"
 TARGET_NAME="OneLib"
 TARGET_DEVICE="iphoneos"
 TARGET_SIMULATOR="iphonesimulator"
+
+INSTALL_DIR=$(pwd)/Products/${TARGET_NAME}.framework
+
+WORK_DIR=build
+DEVICE_DIR=${WORK_DIR}/${configuration}-iphoneos/${TARGET_NAME}.framework
+SIMULATOR_DIR=${WORK_DIR}/${configuration}-iphonesimulator/${TARGET_NAME}.framework
+
+if [ -d ${WORK_DIR} ]; then
+rm -rf ${WORK_DIR}
+fi
 
 
 # 修改版本号和时间
@@ -77,12 +75,13 @@ xcodebuild build \
 -configuration ${configuration} \
 -sdk ${TARGET_SIMULATOR} -arch x86_64 \
 -UseModernBuildSystem=YES \
+ ONLY_ACTIVE_ARCH=NO \
  DEPLOYMENT_POSTPROCESSING=YES \
  GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
  GCC_SYMBOLS_PRIVATE_EXTERN=YES \
  STRIP_STYLE="non-global" \
  COPY_PHASE_STRIP=YES \
- SYMROOT=build |xcpretty
+ SYMROOT=build
 
 echo "***开始build iphoneos文件***${configuration}"
 
@@ -92,41 +91,35 @@ xcodebuild build \
 -configuration ${configuration} \
 -sdk ${TARGET_DEVICE} \
 -UseModernBuildSystem=YES \
+ ONLY_ACTIVE_ARCH=NO \
  DEPLOYMENT_POSTPROCESSING=YES \
  GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
  GCC_SYMBOLS_PRIVATE_EXTERN=YES \
  STRIP_STYLE="non-global" \
  COPY_PHASE_STRIP=YES \
- SYMROOT=build |xcpretty
+ SYMROOT=build
 
 
-# 导出sdk地址
-exportSdkPath="bin"
-exportSdkPath2="../Frameworks"
-
-if [ ! -d $exportSdkPath ]; then
-mkdir -p $exportSdkPath;
+if [ -d ${INSTALL_DIR} ]
+then
+rm -rf ${INSTALL_DIR}
 fi
+mkdir -p ${INSTALL_DIR}
 
-# 获取工程当前所在路径
-project_path=$(pwd)
+cp -R "${DEVICE_DIR}/" "${INSTALL_DIR}/"
+cp -R "${SIMULATOR_DIR}/" "${INSTALL_DIR}/"
 
-# 编译文件路径
-buildPath=${project_path}/build
-# 真机sdk路径
-iphoneos_path=${buildPath}/${configuration}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}
-# 模拟器sdk路径
-simulator_path=${buildPath}/${configuration}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}
-# 合并后sdk路径
-merge_path=${exportSdkPath}/${TARGET_NAME}.framework/${TARGET_NAME}
-# 合并模拟器和真机.framework包
-lipo -create ${iphoneos_path} ${simulator_path} -output ${merge_path}
-# 拷贝framework到目标文件夹
-cp -R ${buildPath}/${configuration}-iphoneos/${TARGET_NAME}.framework ${exportSdkPath}
-cp -R ${buildPath}/${configuration}-iphoneos/${TARGET_NAME}.framework ${exportSdkPath2}
+lipo -create "${DEVICE_DIR}/${TARGET_NAME}" "${SIMULATOR_DIR}/${TARGET_NAME}" -output "${INSTALL_DIR}/${TARGET_NAME}"
+rm -r ${WORK_DIR}
 
-# 移除一些编译中间文件
-rm -rf build
+# 自动移动到 Demo SDK 目录
+DST_DIR="../Frameworks"
+if [ ! -d $DST_DIR ]; then
+mkdir -p "$DST_DIR"
+fi
+rm -rf "${DST_DIR}/*"
+cp -af ${INSTALL_DIR} ${DST_DIR}
+
+#rm -r $(pwd)/Products
 
 echo "***完成Build ${TARGET_NAME}静态库${configuration}****"
-

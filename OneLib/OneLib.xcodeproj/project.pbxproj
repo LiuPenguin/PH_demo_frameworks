@@ -6,13 +6,26 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		371D5ECA25E10D2200B3833B /* agg */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 371D5ECB25E10D2200B3833B /* Build configuration list for PBXAggregateTarget "agg" */;
+			buildPhases = (
+				371D5ED125E10D2900B3833B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = agg;
+			productName = agg;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		37AFFB2425DE5E8C00E52897 /* OneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFB1A25DE5E8C00E52897 /* OneLib.framework */; };
 		37AFFB2925DE5E8C00E52897 /* OneLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFB2825DE5E8C00E52897 /* OneLibTests.m */; };
 		37AFFB2B25DE5E8C00E52897 /* OneLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFB1D25DE5E8C00E52897 /* OneLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFC0325DE6E1900E52897 /* oneTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFC0125DE6E1900E52897 /* oneTestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFC0425DE6E1900E52897 /* oneTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFC0225DE6E1900E52897 /* oneTestClass.m */; };
-		4B9D657D61311F09506C7B59 /* libPods-OneLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11B665690EEE2A729468ECC /* libPods-OneLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +48,6 @@
 		37AFFC0125DE6E1900E52897 /* oneTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oneTestClass.h; sourceTree = "<group>"; };
 		37AFFC0225DE6E1900E52897 /* oneTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneTestClass.m; sourceTree = "<group>"; };
 		A0A382D093363386634394AA /* Pods-OneLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLib.release.xcconfig"; path = "Target Support Files/Pods-OneLib/Pods-OneLib.release.xcconfig"; sourceTree = "<group>"; };
-		D11B665690EEE2A729468ECC /* libPods-OneLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA32A5947A3AA295D7DDB47 /* Pods-OneLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLib.debug.xcconfig"; path = "Target Support Files/Pods-OneLib/Pods-OneLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B9D657D61311F09506C7B59 /* libPods-OneLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +113,6 @@
 		975F66C740C02E62D5923106 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D11B665690EEE2A729468ECC /* libPods-OneLib.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +151,7 @@
 				37AFFB1625DE5E8C00E52897 /* Sources */,
 				37AFFB1725DE5E8C00E52897 /* Frameworks */,
 				37AFFB1825DE5E8C00E52897 /* Resources */,
+				371D5EC725E10B4200B3833B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -177,6 +188,9 @@
 			attributes = {
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					371D5ECA25E10D2200B3833B = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					37AFFB1925DE5E8C00E52897 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -200,6 +214,7 @@
 			targets = (
 				37AFFB1925DE5E8C00E52897 /* OneLib */,
 				37AFFB2225DE5E8C00E52897 /* OneLibTests */,
+				371D5ECA25E10D2200B3833B /* agg */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +259,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		371D5EC725E10B4200B3833B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		371D5ED125E10D2900B3833B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nOUTPUT_DIR=${BUILD_DIR}/${CONFIGURATION}-universal\nTARGET_DIR=${HOME}/Downloads\n\n# make sure the output directory exists\nmkdir -p \"${OUTPUT_DIR}\"\n\n# Step 1. Build Device and Simulator versions\n\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphoneos  ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -arch armv7 -arch armv7s -arch arm64 clean build\n\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -arch x86_64 clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${OUTPUT_DIR}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\" \"${TARGET_DIR}/\"\n\n# Cleaning the oldest.\nif [ -d \"${OUTPUT_DIR}\" ]\nthen\nrm -rf \"${OUTPUT_DIR}\"\nfi\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${TARGET_DIR}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +323,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		371D5ECC25E10D2200B3833B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		371D5ECD25E10D2200B3833B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		37AFFB2C25DE5E8C00E52897 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -483,6 +548,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		371D5ECB25E10D2200B3833B /* Build configuration list for PBXAggregateTarget "agg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371D5ECC25E10D2200B3833B /* Debug */,
+				371D5ECD25E10D2200B3833B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		37AFFB1425DE5E8C00E52897 /* Build configuration list for PBXProject "OneLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

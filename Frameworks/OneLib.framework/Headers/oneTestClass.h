@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface twoTestClass : NSObject
+@interface oneTestClass : NSObject
 
-+(void)twoTestPrint;
++(void)oneTestPrint;
 
 @end
 
