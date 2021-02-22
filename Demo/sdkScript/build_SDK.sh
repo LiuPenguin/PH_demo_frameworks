@@ -18,15 +18,6 @@ VER_FLAG=$PPARAM
 elif [ $PFLAG == "-t" ]
 then
 Need_Tag=$PPARAM
-elif [ $PFLAG == "-z" ]
-then
-Need_Zip=$PPARAM
-elif [ $PFLAG == "-s" ]
-then
-Need_ShowLogic=$PPARAM
-elif [ $PFLAG == "-x" ]
-then
-VER_FLAG_Demo=$PPARAM
 fi
 done
 
@@ -35,7 +26,7 @@ cd ..
 
 cd OneLib
 echo "***开始编译OneLib层****-v${VER_FLAG}"
-sh autobuild.sh -b${DEV_FLAG} -v${VER_FLAG}
+sh build_framework.sh -b${DEV_FLAG} -v${VER_FLAG} #可以编译脚本autobuild.sh  跟build_framework.sh差异见脚本内容
 echo "***结束编译OneLib层****"
 cd ..
 
