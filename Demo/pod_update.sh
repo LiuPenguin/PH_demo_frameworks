@@ -2,4 +2,4 @@
 
 pod update
 
-ruby ../sdkScript/pods_reference.rb
+ruby sdkScript/pods_reference.rb

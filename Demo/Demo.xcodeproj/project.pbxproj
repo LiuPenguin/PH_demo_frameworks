@@ -21,7 +21,8 @@
 		37AFFAF525DE5E4400E52897 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAF425DE5E4400E52897 /* DemoTests.m */; };
 		37AFFB0025DE5E4400E52897 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAFF25DE5E4400E52897 /* DemoUITests.m */; };
 		37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC1725DE793800E52897 /* libc++.tbd */; };
-		6F87356591DB41B3CDE20881 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F448BF8F2C172EA260828B97 /* libPods-Demo.a */; };
+		37F072D825E5FA510033F34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F072D725E5FA510033F34B /* UIKit.framework */; };
+		6CA0C0B474E6B2CCFFC0021A /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F448BF8F2C172EA260828B97 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		37AFFC1725DE793800E52897 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		37AFFC7D25DF596900E52897 /* OneLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OneLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AFFC7F25DF596900E52897 /* TwoLin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TwoLin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F072D725E5FA510033F34B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		588F4AA493C4D0424563BFF7 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A2234475066CCCA94C085D2F /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		F448BF8F2C172EA260828B97 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +93,8 @@
 				37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */,
 				3771064E25DFBC4D00668223 /* TwoLin.framework in Frameworks */,
 				3771064C25DFBC4D00668223 /* OneLib.framework in Frameworks */,
-				6F87356591DB41B3CDE20881 /* libPods-Demo.a in Frameworks */,
+				6CA0C0B474E6B2CCFFC0021A /* libPods-Demo.a in Frameworks */,
+				37F072D825E5FA510033F34B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +118,7 @@
 		1864FC733BFDEDBB4BED5B8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37F072D725E5FA510033F34B /* UIKit.framework */,
 				37AFFC7D25DF596900E52897 /* OneLib.framework */,
 				37AFFC7F25DF596900E52897 /* TwoLin.framework */,
 				37AFFC1725DE793800E52897 /* libc++.tbd */,

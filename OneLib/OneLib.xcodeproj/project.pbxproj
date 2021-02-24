@@ -26,9 +26,31 @@
 		37AFFB2B25DE5E8C00E52897 /* OneLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFB1D25DE5E8C00E52897 /* OneLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFC0325DE6E1900E52897 /* oneTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFC0125DE6E1900E52897 /* oneTestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFC0425DE6E1900E52897 /* oneTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFC0225DE6E1900E52897 /* oneTestClass.m */; };
+		37F072C525E5F86F0033F34B /* findpass_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072B825E5F86E0033F34B /* findpass_on@2x.png */; };
+		37F072C625E5F86F0033F34B /* login_apple_dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072B925E5F86E0033F34B /* login_apple_dark@3x.png */; };
+		37F072C725E5F86F0033F34B /* img_link@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072BA25E5F86E0033F34B /* img_link@2x.png */; };
+		37F072C825E5F86F0033F34B /* inputtextfield_clearbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072BB25E5F86E0033F34B /* inputtextfield_clearbtn@2x.png */; };
+		37F072C925E5F86F0033F34B /* findpass_on_dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072BC25E5F86E0033F34B /* findpass_on_dark@2x.png */; };
+		37F072CA25E5F86F0033F34B /* ios_public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 37F072BD25E5F86E0033F34B /* ios_public_key.der */; };
+		37F072CB25E5F86F0033F34B /* inputtextfield_clearbtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072BE25E5F86E0033F34B /* inputtextfield_clearbtn@3x.png */; };
+		37F072CC25E5F86F0033F34B /* inputtextfield_clearbtn_dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072BF25E5F86E0033F34B /* inputtextfield_clearbtn_dark@3x.png */; };
+		37F072CD25E5F86F0033F34B /* inputtextfield_clearbtn_dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072C025E5F86E0033F34B /* inputtextfield_clearbtn_dark@2x.png */; };
+		37F072CE25E5F86F0033F34B /* img_link@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072C125E5F86E0033F34B /* img_link@3x.png */; };
+		37F072CF25E5F86F0033F34B /* findpass_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072C225E5F86E0033F34B /* findpass_on@3x.png */; };
+		37F072D025E5F86F0033F34B /* findpass_on_dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072C325E5F86E0033F34B /* findpass_on_dark@3x.png */; };
+		37F072D125E5F86F0033F34B /* login_apple_dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F072C425E5F86E0033F34B /* login_apple_dark@2x.png */; };
+		37F072D425E5F9D50033F34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F072D225E5F8FC0033F34B /* UIKit.framework */; };
+		37F072D525E5F9D50033F34B /* UIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37F072D225E5F8FC0033F34B /* UIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		378598A125E60D3100CC21CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37AFFB1125DE5E8C00E52897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F0726925E4F55F0033F34B;
+			remoteInfo = OneLibBundle;
+		};
 		37AFFB2525DE5E8C00E52897 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 37AFFB1125DE5E8C00E52897 /* Project object */;
@@ -37,6 +59,20 @@
 			remoteInfo = OneLib;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37F072D625E5F9D50033F34B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37F072D525E5F9D50033F34B /* UIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		37AFFB1A25DE5E8C00E52897 /* OneLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OneLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,8 +83,25 @@
 		37AFFB2A25DE5E8C00E52897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37AFFC0125DE6E1900E52897 /* oneTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oneTestClass.h; sourceTree = "<group>"; };
 		37AFFC0225DE6E1900E52897 /* oneTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneTestClass.m; sourceTree = "<group>"; };
+		37F0726A25E4F55F0033F34B /* OneLibBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneLibBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F0726C25E4F55F0033F34B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F072B825E5F86E0033F34B /* findpass_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findpass_on@2x.png"; sourceTree = "<group>"; };
+		37F072B925E5F86E0033F34B /* login_apple_dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_apple_dark@3x.png"; sourceTree = "<group>"; };
+		37F072BA25E5F86E0033F34B /* img_link@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_link@2x.png"; sourceTree = "<group>"; };
+		37F072BB25E5F86E0033F34B /* inputtextfield_clearbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inputtextfield_clearbtn@2x.png"; sourceTree = "<group>"; };
+		37F072BC25E5F86E0033F34B /* findpass_on_dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findpass_on_dark@2x.png"; sourceTree = "<group>"; };
+		37F072BD25E5F86E0033F34B /* ios_public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = ios_public_key.der; sourceTree = "<group>"; };
+		37F072BE25E5F86E0033F34B /* inputtextfield_clearbtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inputtextfield_clearbtn@3x.png"; sourceTree = "<group>"; };
+		37F072BF25E5F86E0033F34B /* inputtextfield_clearbtn_dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inputtextfield_clearbtn_dark@3x.png"; sourceTree = "<group>"; };
+		37F072C025E5F86E0033F34B /* inputtextfield_clearbtn_dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inputtextfield_clearbtn_dark@2x.png"; sourceTree = "<group>"; };
+		37F072C125E5F86E0033F34B /* img_link@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_link@3x.png"; sourceTree = "<group>"; };
+		37F072C225E5F86E0033F34B /* findpass_on@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findpass_on@3x.png"; sourceTree = "<group>"; };
+		37F072C325E5F86E0033F34B /* findpass_on_dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findpass_on_dark@3x.png"; sourceTree = "<group>"; };
+		37F072C425E5F86E0033F34B /* login_apple_dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_apple_dark@2x.png"; sourceTree = "<group>"; };
+		37F072D225E5F8FC0033F34B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A0A382D093363386634394AA /* Pods-OneLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLib.release.xcconfig"; path = "Target Support Files/Pods-OneLib/Pods-OneLib.release.xcconfig"; sourceTree = "<group>"; };
 		DFA32A5947A3AA295D7DDB47 /* Pods-OneLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLib.debug.xcconfig"; path = "Target Support Files/Pods-OneLib/Pods-OneLib.debug.xcconfig"; sourceTree = "<group>"; };
+		E508CAB3FD91C55E2EC413B4 /* libPods-OneLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F072D425E5F9D50033F34B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +121,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37F0726725E4F55F0033F34B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +136,7 @@
 			children = (
 				37AFFB1C25DE5E8C00E52897 /* OneLib */,
 				37AFFB2725DE5E8C00E52897 /* OneLibTests */,
+				37F0726B25E4F55F0033F34B /* OneLibBundle */,
 				37AFFB1B25DE5E8C00E52897 /* Products */,
 				B1BBB591721E3012B9253D1C /* Pods */,
 				975F66C740C02E62D5923106 /* Frameworks */,
@@ -86,6 +148,7 @@
 			children = (
 				37AFFB1A25DE5E8C00E52897 /* OneLib.framework */,
 				37AFFB2325DE5E8C00E52897 /* OneLibTests.xctest */,
+				37F0726A25E4F55F0033F34B /* OneLibBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,9 +173,32 @@
 			path = OneLibTests;
 			sourceTree = "<group>";
 		};
+		37F0726B25E4F55F0033F34B /* OneLibBundle */ = {
+			isa = PBXGroup;
+			children = (
+				37F072BC25E5F86E0033F34B /* findpass_on_dark@2x.png */,
+				37F072C325E5F86E0033F34B /* findpass_on_dark@3x.png */,
+				37F072B825E5F86E0033F34B /* findpass_on@2x.png */,
+				37F072C225E5F86E0033F34B /* findpass_on@3x.png */,
+				37F072BA25E5F86E0033F34B /* img_link@2x.png */,
+				37F072C125E5F86E0033F34B /* img_link@3x.png */,
+				37F072C025E5F86E0033F34B /* inputtextfield_clearbtn_dark@2x.png */,
+				37F072BF25E5F86E0033F34B /* inputtextfield_clearbtn_dark@3x.png */,
+				37F072BB25E5F86E0033F34B /* inputtextfield_clearbtn@2x.png */,
+				37F072BE25E5F86E0033F34B /* inputtextfield_clearbtn@3x.png */,
+				37F072BD25E5F86E0033F34B /* ios_public_key.der */,
+				37F072C425E5F86E0033F34B /* login_apple_dark@2x.png */,
+				37F072B925E5F86E0033F34B /* login_apple_dark@3x.png */,
+				37F0726C25E4F55F0033F34B /* Info.plist */,
+			);
+			path = OneLibBundle;
+			sourceTree = "<group>";
+		};
 		975F66C740C02E62D5923106 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37F072D225E5F8FC0033F34B /* UIKit.framework */,
+				E508CAB3FD91C55E2EC413B4 /* libPods-OneLib.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,10 +238,12 @@
 				37AFFB1725DE5E8C00E52897 /* Frameworks */,
 				37AFFB1825DE5E8C00E52897 /* Resources */,
 				371D5EC725E10B4200B3833B /* ShellScript */,
+				37F072D625E5F9D50033F34B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				378598A225E60D3100CC21CF /* PBXTargetDependency */,
 			);
 			name = OneLib;
 			productName = OneLib;
@@ -180,12 +268,30 @@
 			productReference = 37AFFB2325DE5E8C00E52897 /* OneLibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		37F0726925E4F55F0033F34B /* OneLibBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F0726F25E4F55F0033F34B /* Build configuration list for PBXNativeTarget "OneLibBundle" */;
+			buildPhases = (
+				37F0726625E4F55F0033F34B /* Sources */,
+				37F0726725E4F55F0033F34B /* Frameworks */,
+				37F0726825E4F55F0033F34B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneLibBundle;
+			productName = OneLibBundle;
+			productReference = 37F0726A25E4F55F0033F34B /* OneLibBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		37AFFB1125DE5E8C00E52897 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					371D5ECA25E10D2200B3833B = {
@@ -195,6 +301,9 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					37AFFB2225DE5E8C00E52897 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					37F0726925E4F55F0033F34B = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -215,6 +324,7 @@
 				37AFFB1925DE5E8C00E52897 /* OneLib */,
 				37AFFB2225DE5E8C00E52897 /* OneLibTests */,
 				371D5ECA25E10D2200B3833B /* agg */,
+				37F0726925E4F55F0033F34B /* OneLibBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +341,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F0726825E4F55F0033F34B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F072C925E5F86F0033F34B /* findpass_on_dark@2x.png in Resources */,
+				37F072C725E5F86F0033F34B /* img_link@2x.png in Resources */,
+				37F072D125E5F86F0033F34B /* login_apple_dark@2x.png in Resources */,
+				37F072D025E5F86F0033F34B /* findpass_on_dark@3x.png in Resources */,
+				37F072CA25E5F86F0033F34B /* ios_public_key.der in Resources */,
+				37F072C625E5F86F0033F34B /* login_apple_dark@3x.png in Resources */,
+				37F072CF25E5F86F0033F34B /* findpass_on@3x.png in Resources */,
+				37F072C825E5F86F0033F34B /* inputtextfield_clearbtn@2x.png in Resources */,
+				37F072CE25E5F86F0033F34B /* img_link@3x.png in Resources */,
+				37F072CC25E5F86F0033F34B /* inputtextfield_clearbtn_dark@3x.png in Resources */,
+				37F072CB25E5F86F0033F34B /* inputtextfield_clearbtn@3x.png in Resources */,
+				37F072CD25E5F86F0033F34B /* inputtextfield_clearbtn_dark@2x.png in Resources */,
+				37F072C525E5F86F0033F34B /* findpass_on@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +442,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37F0726625E4F55F0033F34B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		378598A225E60D3100CC21CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F0726925E4F55F0033F34B /* OneLibBundle */;
+			targetProxy = 378598A125E60D3100CC21CF /* PBXContainerItemProxy */;
+		};
 		37AFFB2625DE5E8C00E52897 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 37AFFB1925DE5E8C00E52897 /* OneLib */;
@@ -468,6 +610,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/A0PreMainTime\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"$(PROJECT_DIR)/framework/**",
+				);
 				INFOPLIST_FILE = OneLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,12 +627,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+				);
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = sfsfdsfsfds.OneLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/\"/**";
 				gg = "";
 			};
 			name = Debug;
@@ -496,6 +653,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/A0PreMainTime\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"$(PROJECT_DIR)/framework/**",
+				);
 				INFOPLIST_FILE = OneLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -503,12 +670,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+				);
 				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = sfsfdsfsfds.OneLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/\"/**";
 				gg = "";
 			};
 			name = Release;
@@ -542,6 +714,42 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sfsfdsfsfds.OneLibTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37F0726D25E4F55F0033F34B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = OneLibBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sfsfdsfsfds.OneLibBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		37F0726E25E4F55F0033F34B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = OneLibBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sfsfdsfsfds.OneLibBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -580,6 +788,15 @@
 			buildConfigurations = (
 				37AFFB3225DE5E8C00E52897 /* Debug */,
 				37AFFB3325DE5E8C00E52897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F0726F25E4F55F0033F34B /* Build configuration list for PBXNativeTarget "OneLibBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F0726D25E4F55F0033F34B /* Debug */,
+				37F0726E25E4F55F0033F34B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
