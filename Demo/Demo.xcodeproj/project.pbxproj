@@ -11,6 +11,7 @@
 		3771064D25DFBC4D00668223 /* OneLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7D25DF596900E52897 /* OneLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3771064E25DFBC4D00668223 /* TwoLin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; };
 		3771064F25DFBC4D00668223 /* TwoLin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37795EE825EC926D001D5792 /* OneLibBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37795EE725EC926D001D5792 /* OneLibBundle.bundle */; };
 		37AFFADA25DE5E4100E52897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAD925DE5E4100E52897 /* AppDelegate.m */; };
 		37AFFADD25DE5E4100E52897 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFADC25DE5E4100E52897 /* SceneDelegate.m */; };
 		37AFFAE025DE5E4100E52897 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFADF25DE5E4100E52897 /* ViewController.m */; };
@@ -58,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		37795EE725EC926D001D5792 /* OneLibBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OneLibBundle.bundle; sourceTree = "<group>"; };
 		37AFFAD525DE5E4100E52897 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AFFAD825DE5E4100E52897 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37AFFAD925DE5E4100E52897 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,9 +129,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		37795EE225EC922C001D5792 /* 3rdFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37795EE625EC926D001D5792 /* OneLibSDK */,
+			);
+			path = 3rdFrameworks;
+			sourceTree = "<group>";
+		};
+		37795EE625EC926D001D5792 /* OneLibSDK */ = {
+			isa = PBXGroup;
+			children = (
+				37795EE725EC926D001D5792 /* OneLibBundle.bundle */,
+			);
+			path = OneLibSDK;
+			sourceTree = "<group>";
+		};
 		37AFFACC25DE5E4100E52897 = {
 			isa = PBXGroup;
 			children = (
+				37795EE225EC922C001D5792 /* 3rdFrameworks */,
 				37AFFAD725DE5E4100E52897 /* Demo */,
 				37AFFAF325DE5E4400E52897 /* DemoTests */,
 				37AFFAFE25DE5E4400E52897 /* DemoUITests */,
@@ -302,6 +321,7 @@
 			files = (
 				37AFFAE825DE5E4300E52897 /* LaunchScreen.storyboard in Resources */,
 				37AFFAE525DE5E4300E52897 /* Assets.xcassets in Resources */,
+				37795EE825EC926D001D5792 /* OneLibBundle.bundle in Resources */,
 				37AFFAE325DE5E4100E52897 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
