@@ -12,7 +12,6 @@
 		37AFFB5125DE5EA600E52897 /* TwoLin.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFB4325DE5EA600E52897 /* TwoLin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFBFD25DE6E0A00E52897 /* twoTestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AFFBFB25DE6E0A00E52897 /* twoTestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37AFFBFE25DE6E0A00E52897 /* twoTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFBFC25DE6E0A00E52897 /* twoTestClass.m */; };
-		CA0686381C5D2D5131844A39 /* libPods-TwoLin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF092CA9D2F3AE7E44DE297 /* libPods-TwoLin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0686381C5D2D5131844A39 /* libPods-TwoLin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import <UIKit/UIKit.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface twoTestClass : NSObject
+@interface oneTestClass : NSObject
 
-+(void)twoTestPrint;
++(void)oneTestPrint;
+
++(UIImage *)imageWithName:(NSString *)imageName;
 
 @end
 

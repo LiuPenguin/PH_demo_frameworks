@@ -7,10 +7,7 @@
 
 #import "ViewController.h"
 
-#import <TwoLin/TwoLin.h>
-#import <OneLib/OneLib.h>
-
-#import <SVProgressHUD/SVProgressHUD.h>
+#import "PrefixHeader.pch"
 
 
 @interface ViewController ()
@@ -21,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 
     NSLog(@"开始初始化");
     

@@ -15,12 +15,9 @@
 }
 
 +(UIImage *)imageWithName:(NSString *)imageName{
-//
-//    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"OneLibBundle" withExtension:@"bundle"]];
-//    return  [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
     UIImage * img = [UIImage imageNamed:[NSString stringWithFormat:@"OneLibBundle.bundle/%@",imageName]];
     return img;
 }
-#pragma mark - 正则表达式搞一搞
+
 
 @end

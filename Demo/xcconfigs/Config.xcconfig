@@ -1,0 +1,17 @@
+//
+//  Config.xcconfig
+//  Demo
+//
+//  Created by liupenghui on 2021/3/3.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+MainAppName = 实验中学
+
+GCC_PREFIX_HEADER = $(SRCROOT)/Demo/PrefixHeader.pch
+   
+
+
+

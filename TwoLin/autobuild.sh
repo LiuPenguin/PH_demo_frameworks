@@ -101,8 +101,8 @@ xcodebuild build \
 
 
 # 导出sdk地址
-exportSdkPath="bin"
-exportSdkPath2="../Frameworks"
+
+exportSdkPath="../Demo/3rdFrameworks/TwoLinSDK"
 
 if [ ! -d $exportSdkPath ]; then
 mkdir -p $exportSdkPath;
@@ -123,7 +123,6 @@ merge_path=${exportSdkPath}/${TARGET_NAME}.framework/${TARGET_NAME}
 lipo -create ${iphoneos_path} ${simulator_path} -output ${merge_path}
 # 拷贝framework到目标文件夹
 cp -R ${buildPath}/${configuration}-iphoneos/${TARGET_NAME}.framework ${exportSdkPath}
-cp -R ${buildPath}/${configuration}-iphoneos/${TARGET_NAME}.framework ${exportSdkPath2}
 
 # 移除一些编译中间文件
 rm -rf build
