@@ -6,20 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		371D5ECA25E10D2200B3833B /* agg */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 371D5ECB25E10D2200B3833B /* Build configuration list for PBXAggregateTarget "agg" */;
-			buildPhases = (
-				371D5ED125E10D2900B3833B /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = agg;
-			productName = agg;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		37AFFB2425DE5E8C00E52897 /* OneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFB1A25DE5E8C00E52897 /* OneLib.framework */; };
 		37AFFB2925DE5E8C00E52897 /* OneLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFB2825DE5E8C00E52897 /* OneLibTests.m */; };
@@ -295,9 +281,6 @@
 				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					371D5ECA25E10D2200B3833B = {
-						CreatedOnToolsVersion = 12.2;
-					};
 					37AFFB1925DE5E8C00E52897 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -324,7 +307,6 @@
 			targets = (
 				37AFFB1925DE5E8C00E52897 /* OneLib */,
 				37AFFB2225DE5E8C00E52897 /* OneLibTests */,
-				371D5ECA25E10D2200B3833B /* agg */,
 				37F0726925E4F55F0033F34B /* OneLibBundle */,
 			);
 		};
@@ -407,23 +389,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
-		371D5ED125E10D2900B3833B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nOUTPUT_DIR=${BUILD_DIR}/${CONFIGURATION}-universal\nTARGET_DIR=${HOME}/Downloads\n\n# make sure the output directory exists\nmkdir -p \"${OUTPUT_DIR}\"\n\n# Step 1. Build Device and Simulator versions\n\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphoneos  ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -arch armv7 -arch armv7s -arch arm64 clean build\n\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -arch x86_64 clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${OUTPUT_DIR}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${OUTPUT_DIR}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${OUTPUT_DIR}/${PROJECT_NAME}.framework\" \"${TARGET_DIR}/\"\n\n# Cleaning the oldest.\nif [ -d \"${OUTPUT_DIR}\" ]\nthen\nrm -rf \"${OUTPUT_DIR}\"\nfi\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${TARGET_DIR}\"\n";
-		};
 		37795EE125EC910E001D5792 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,22 +448,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		371D5ECC25E10D2200B3833B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		371D5ECD25E10D2200B3833B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		37AFFB2C25DE5E8C00E52897 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -774,15 +723,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		371D5ECB25E10D2200B3833B /* Build configuration list for PBXAggregateTarget "agg" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				371D5ECC25E10D2200B3833B /* Debug */,
-				371D5ECD25E10D2200B3833B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		37AFFB1425DE5E8C00E52897 /* Build configuration list for PBXProject "OneLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

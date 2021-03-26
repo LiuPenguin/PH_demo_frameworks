@@ -7,7 +7,8 @@ echo "拷贝 ${BUNDLE_DIR} "
 echo "================================"
 
 # 自动移动到 Demo SDK 目录
-DST_DIR="../Demo/3rdFrameworks/OneLibSDK"
+#DST_DIR="../Demo/3rdFrameworks/OneLibSDK"
+DST_DIR="../Demo/3rdFrameworks/OneLibSDK/OneLib.framework"
 if [ ! -d $DST_DIR ]; then
 mkdir -p "$DST_DIR"
 fi

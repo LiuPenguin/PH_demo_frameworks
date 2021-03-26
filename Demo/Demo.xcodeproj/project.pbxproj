@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		09268EBBF091ADA5B43BA7D9 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C17A191B9117DBD4AF29C69 /* libPods-Demo.a */; };
+		377102D325F61AFD008182E9 /* OneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377102D225F61AFD008182E9 /* OneLib.framework */; };
 		3771064C25DFBC4D00668223 /* OneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7D25DF596900E52897 /* OneLib.framework */; };
 		3771064D25DFBC4D00668223 /* OneLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7D25DF596900E52897 /* OneLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3771064E25DFBC4D00668223 /* TwoLin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; };
 		3771064F25DFBC4D00668223 /* TwoLin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC7F25DF596900E52897 /* TwoLin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		37795EE825EC926D001D5792 /* OneLibBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37795EE725EC926D001D5792 /* OneLibBundle.bundle */; };
 		37795F6325EF854B001D5792 /* ReleaseConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 37795F6025EF854B001D5792 /* ReleaseConfig.xcconfig */; };
 		37795F6425EF854B001D5792 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 37795F6125EF854B001D5792 /* Config.xcconfig */; };
 		37795F6525EF854B001D5792 /* DebugConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 37795F6225EF854B001D5792 /* DebugConfig.xcconfig */; };
@@ -24,6 +24,7 @@
 		37AFFAE825DE5E4300E52897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AFFAE625DE5E4300E52897 /* LaunchScreen.storyboard */; };
 		37AFFAEB25DE5E4300E52897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFFAEA25DE5E4300E52897 /* main.m */; };
 		37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AFFC1725DE793800E52897 /* libc++.tbd */; };
+		37E53293260DD02100EC5445 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E53292260DD02100EC5445 /* TestClass.m */; };
 		37F072D825E5FA510033F34B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F072D725E5FA510033F34B /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		37795EE725EC926D001D5792 /* OneLibBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OneLibBundle.bundle; sourceTree = "<group>"; };
+		374A695825F8C83700618087 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		377102D225F61AFD008182E9 /* OneLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneLib.framework; sourceTree = "<group>"; };
 		37795F6025EF854B001D5792 /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
 		37795F6125EF854B001D5792 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		37795F6225EF854B001D5792 /* DebugConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 		37AFFC1725DE793800E52897 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		37AFFC7D25DF596900E52897 /* OneLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OneLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AFFC7F25DF596900E52897 /* TwoLin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TwoLin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E53291260DD02100EC5445 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		37E53292260DD02100EC5445 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		37F072D725E5FA510033F34B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		588F4AA493C4D0424563BFF7 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		8C17A191B9117DBD4AF29C69 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37AFFC1825DE793800E52897 /* libc++.tbd in Frameworks */,
+				377102D325F61AFD008182E9 /* OneLib.framework in Frameworks */,
 				3771064E25DFBC4D00668223 /* TwoLin.framework in Frameworks */,
 				3771064C25DFBC4D00668223 /* OneLib.framework in Frameworks */,
 				37F072D825E5FA510033F34B /* UIKit.framework in Frameworks */,
@@ -92,6 +97,7 @@
 		1864FC733BFDEDBB4BED5B8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				374A695825F8C83700618087 /* AppTrackingTransparency.framework */,
 				37F072D725E5FA510033F34B /* UIKit.framework */,
 				37AFFC7D25DF596900E52897 /* OneLib.framework */,
 				37AFFC7F25DF596900E52897 /* TwoLin.framework */,
@@ -101,20 +107,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		377102D125F61AFD008182E9 /* OneLibSDK */ = {
+			isa = PBXGroup;
+			children = (
+				377102D225F61AFD008182E9 /* OneLib.framework */,
+			);
+			path = OneLibSDK;
+			sourceTree = "<group>";
+		};
 		37795EE225EC922C001D5792 /* 3rdFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37795EE625EC926D001D5792 /* OneLibSDK */,
+				377102D125F61AFD008182E9 /* OneLibSDK */,
 			);
 			path = 3rdFrameworks;
-			sourceTree = "<group>";
-		};
-		37795EE625EC926D001D5792 /* OneLibSDK */ = {
-			isa = PBXGroup;
-			children = (
-				37795EE725EC926D001D5792 /* OneLibBundle.bundle */,
-			);
-			path = OneLibSDK;
 			sourceTree = "<group>";
 		};
 		37795F5F25EF854B001D5792 /* xcconfigs */ = {
@@ -158,6 +164,8 @@
 				37AFFADC25DE5E4100E52897 /* SceneDelegate.m */,
 				37AFFADE25DE5E4100E52897 /* ViewController.h */,
 				37AFFADF25DE5E4100E52897 /* ViewController.m */,
+				37E53291260DD02100EC5445 /* TestClass.h */,
+				37E53292260DD02100EC5445 /* TestClass.m */,
 				37AFFAE125DE5E4100E52897 /* Main.storyboard */,
 				37AFFAE425DE5E4300E52897 /* Assets.xcassets */,
 				37AFFAE625DE5E4300E52897 /* LaunchScreen.storyboard */,
@@ -259,7 +267,6 @@
 				37AFFAE525DE5E4300E52897 /* Assets.xcassets in Resources */,
 				37795F6525EF854B001D5792 /* DebugConfig.xcconfig in Resources */,
 				37795F6325EF854B001D5792 /* ReleaseConfig.xcconfig in Resources */,
-				37795EE825EC926D001D5792 /* OneLibBundle.bundle in Resources */,
 				37795F6425EF854B001D5792 /* Config.xcconfig in Resources */,
 				37AFFAE325DE5E4100E52897 /* Main.storyboard in Resources */,
 			);
@@ -327,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E53293260DD02100EC5445 /* TestClass.m in Sources */,
 				37AFFAE025DE5E4100E52897 /* ViewController.m in Sources */,
 				37AFFADA25DE5E4100E52897 /* AppDelegate.m in Sources */,
 				37AFFAEB25DE5E4300E52897 /* main.m in Sources */,
@@ -478,7 +486,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AV2RGU278;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rdFrameworks/OneLibSDK",
+				);
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,7 +527,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AV2RGU278;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rdFrameworks/OneLibSDK",
+				);
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
