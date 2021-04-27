@@ -59,14 +59,14 @@ xcodebuild clean \
 -scheme ${PROJECT_SCHEME} \
 -configuration ${configuration} \
 -sdk ${TARGET_SIMULATOR} \
--UseModernBuildSystem=YES
+-UseModernBuildSystem=NO
 
 xcodebuild clean \
 -workspace ${PROJECT_WORKSPACE} \
 -scheme ${PROJECT_SCHEME} \
 -configuration ${configuration} \
 -sdk ${TARGET_DEVICE} \
--UseModernBuildSystem=YES
+-UseModernBuildSystem=NO
 
 
 echo "***开始build iphonesimulator文件${configuration}***"
@@ -75,14 +75,14 @@ xcodebuild build \
 -workspace ${PROJECT_WORKSPACE} \
 -scheme ${PROJECT_SCHEME} \
 -configuration ${configuration} \
--sdk ${TARGET_SIMULATOR} -arch x86_64 \
--UseModernBuildSystem=YES \
- DEPLOYMENT_POSTPROCESSING=YES \
- GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
- GCC_SYMBOLS_PRIVATE_EXTERN=YES \
- STRIP_STYLE="non-global" \
- COPY_PHASE_STRIP=YES \
- SYMROOT=build |xcpretty
+-sdk ${TARGET_SIMULATOR} \
+ ARCH= 'i386 x86_64' \
+ VALID_ARCHS='i386 x86_64' \
+ ONLY_ACTIVE_ARCH=NO \
+ GCC_GENERATE_DEBUGGING_SYMBOLS=NO \#安装包瘦身
+ GCC_SYMBOLS_PRIVATE_EXTERN=YES \ #设置yes 去掉不必要的符号信息  建议relese 设置为yes debug设置为no
+ SYMROOT=build \
+ |xcpretty
 
 echo "***开始build iphoneos文件***${configuration}"
 
@@ -91,13 +91,43 @@ xcodebuild build \
 -scheme ${PROJECT_SCHEME} \
 -configuration ${configuration} \
 -sdk ${TARGET_DEVICE} \
--UseModernBuildSystem=YES \
- DEPLOYMENT_POSTPROCESSING=YES \
- GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
- GCC_SYMBOLS_PRIVATE_EXTERN=YES \
- STRIP_STYLE="non-global" \
- COPY_PHASE_STRIP=YES \
- SYMROOT=build |xcpretty
+ ONLY_ACTIVE_ARCH=NO \
+ GCC_GENERATE_DEBUGGING_SYMBOLS=NO \#安装包瘦身
+ GCC_SYMBOLS_PRIVATE_EXTERN=YES \ #设置yes 去掉不必要的符号信息  建议relese 设置为yes debug设置为no
+ SYMROOT=build \
+ |xcpretty
+
+
+
+#echo "***开始build iphonesimulator文件${configuration}***"
+#
+#xcodebuild build \
+#-workspace ${PROJECT_WORKSPACE} \
+#-scheme ${PROJECT_SCHEME} \
+#-configuration ${configuration} \
+#-sdk ${TARGET_SIMULATOR} -arch x86_64 \
+#-UseModernBuildSystem=YES \
+# DEPLOYMENT_POSTPROCESSING=YES \
+# GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
+# GCC_SYMBOLS_PRIVATE_EXTERN=YES \
+# STRIP_STYLE="non-global" \
+# COPY_PHASE_STRIP=YES \
+# SYMROOT=build |xcpretty
+#
+#echo "***开始build iphoneos文件***${configuration}"
+#
+#xcodebuild build \
+#-workspace ${PROJECT_WORKSPACE} \
+#-scheme ${PROJECT_SCHEME} \
+#-configuration ${configuration} \
+#-sdk ${TARGET_DEVICE} \
+#-UseModernBuildSystem=YES \
+# DEPLOYMENT_POSTPROCESSING=YES \
+# GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
+# GCC_SYMBOLS_PRIVATE_EXTERN=YES \
+# STRIP_STYLE="non-global" \
+# COPY_PHASE_STRIP=YES \
+# SYMROOT=build |xcpretty
 
 
 # 导出sdk地址
