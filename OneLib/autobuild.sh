@@ -75,10 +75,10 @@ xcodebuild build \
 -workspace ${PROJECT_WORKSPACE} \
 -scheme ${PROJECT_SCHEME} \
 -configuration ${configuration} \
--sdk ${TARGET_SIMULATOR} \
- ARCH= 'i386 x86_64' \
- VALID_ARCHS='i386 x86_64' \
- ONLY_ACTIVE_ARCH=NO \
+-sdk ${TARGET_SIMULATOR} \ #指定SDK编译项目 模拟器还是真机 xcodebuild命令介绍:https://www.cnblogs.com/liuluoxing/p/8622108.html
+ ARCH= 'i386 x86_64' \#指定架构
+ VALID_ARCHS='i386 x86_64' \#可运行架构
+ ONLY_ACTIVE_ARCH=NO \#通用iOS设备”并使用推荐设置ONLY_ACTIVE_ARCH=YES进行调试配置 所有架构都参与编译 容易报错
  GCC_GENERATE_DEBUGGING_SYMBOLS=NO \#安装包瘦身
  GCC_SYMBOLS_PRIVATE_EXTERN=YES \ #设置yes 去掉不必要的符号信息  建议relese 设置为yes debug设置为no
  |xcpretty
@@ -93,7 +93,7 @@ xcodebuild build \
  ONLY_ACTIVE_ARCH=NO \
  GCC_GENERATE_DEBUGGING_SYMBOLS=NO \#安装包瘦身
  GCC_SYMBOLS_PRIVATE_EXTERN=YES \ #设置yes 去掉不必要的符号信息  建议relese 设置为yes debug设置为no
- |xcpretty
+ |xcpretty #格式化输出
 
 
 
