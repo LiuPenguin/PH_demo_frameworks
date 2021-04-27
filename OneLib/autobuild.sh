@@ -81,7 +81,6 @@ xcodebuild build \
  ONLY_ACTIVE_ARCH=NO \
  GCC_GENERATE_DEBUGGING_SYMBOLS=NO \#安装包瘦身
  GCC_SYMBOLS_PRIVATE_EXTERN=YES \ #设置yes 去掉不必要的符号信息  建议relese 设置为yes debug设置为no
- SYMROOT=build \
  |xcpretty
 
 echo "***开始build iphoneos文件***${configuration}"
@@ -94,7 +93,6 @@ xcodebuild build \
  ONLY_ACTIVE_ARCH=NO \
  GCC_GENERATE_DEBUGGING_SYMBOLS=NO \#安装包瘦身
  GCC_SYMBOLS_PRIVATE_EXTERN=YES \ #设置yes 去掉不必要的符号信息  建议relese 设置为yes debug设置为no
- SYMROOT=build \
  |xcpretty
 
 
